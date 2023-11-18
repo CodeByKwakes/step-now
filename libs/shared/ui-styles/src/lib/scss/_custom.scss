@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+$heading: 'Geogrotesque';
+$body-copy: 'ProximaNova';
+
+$enable-rounded: true !default;
+$enable-shadows: true;
+$enable-transitions: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+$theme-colors: (
+  primary: #50e3c2,
+  secondary: #4f70ce,
+  light: #ffffff,
+  dark: #000000,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$primary: map-get($theme-colors, primary);
+$dark: map-get($theme-colors, dark);
+
+$blockquote-small-color: #000000;
+$body-bg: white;
+$body-color: #333;
+$display1-size: 6.25rem;
+$display1-weight: 700;
+// $lead-font-size: (1.5rem);
+$blockquote-font-size: 2.25rem;
+$body-color-inverse: invert($body-color) !default;
+
+// Fonts
+$font-family-base: $body-copy;
+$headings-font-family: $heading;
+$display-font-family: $heading;
+
+$spacer: 1.5rem;
+$enable-responsive-font-sizes: true;
+$link-color: $primary;
+
+@import '~bootstrap/scss/bootstrap';

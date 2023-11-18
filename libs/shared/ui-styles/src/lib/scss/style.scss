@@ -1,0 +1,75 @@
+@charset 'utf-8';
+@use 'abstracts';
+@use 'resets';
+@use 'base';
+
+
+/* You can add global styles to this file, and also import other style files */
+@import './abstracts/mixins';
+@import './resets/normalize';
+@import './resets/reset.local';
+@import './base/typography';
+@import './custom';
+@import './shame';
+@import '~swiper/swiper-bundle';
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.background-cover {
+  background-position: center center, center center;
+  background-size: cover, cover;
+  background-repeat: repeat, repeat;
+}
+
+.select-style {
+  // display: inline;
+  // border: none;
+  // border-bottom: 1px solid #ccc;
+  // overflow: hidden;
+  // padding-bottom: 7px;
+  // background: #fafafa url("/assets/icons/b360928f8b.svg") no-repeat 90% 50%;
+}
+
+.select-style select {
+  color: #ffffff;
+  font-family: Geogrotesque;
+  text-align: center;
+  opacity: 0.5;
+  border: none;
+  margin-bottom: 0;
+  box-shadow: none;
+  background: transparent;
+  background: url('/assets/icons/iconfinder_arrow-down-01_186411.png') no-repeat
+    right;
+  -webkit-appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+.object--contain {
+  object-fit: contain;
+}
+
+.grey {
+  filter: grayscale(100%);
+}
+
+.flex {
+  &--1 {
+    flex: 1;
+  }
+
+  &--2 {
+    flex: 2;
+  }
+}
