@@ -1,0 +1,31 @@
+{
+  "name": "ui-styles",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/ui-styles/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/ui-styles",
+        "main": "libs/shared/ui-styles/src/index.ts",
+        "tsConfig": "libs/shared/ui-styles/tsconfig.lib.json",
+        "assets": [],
+        "generatePackageJson": true,
+        "format": ["cjs"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-styles/**/*.ts",
+          "libs/shared/ui-styles/package.json"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:shared"]
+}
