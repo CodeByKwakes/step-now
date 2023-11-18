@@ -1,5 +1,5 @@
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
+
+// @import 'bootstrap/scss/variables';
 
 $heading: 'Geogrotesque';
 $body-copy: 'ProximaNova';
@@ -11,8 +11,10 @@ $enable-hover-media-query: false;
 $enable-grid-classes: true;
 $enable-print-styles: true;
 
+$primary: #50e3c2;
+
 $theme-colors: (
-  primary: #50e3c2,
+  primary: $primary,
   secondary: #4f70ce,
   light: #ffffff,
   dark: #000000,
@@ -22,7 +24,7 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$primary: map-get($theme-colors, primary);
+// $primary: map-get($theme-colors, primary);
 $dark: map-get($theme-colors, dark);
 
 $blockquote-small-color: #000000;
@@ -43,4 +45,9 @@ $spacer: 1.5rem;
 $enable-responsive-font-sizes: true;
 $link-color: $primary;
 
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
+// @import "bootstrap/scss/variables";
+// @import "bootstrap/scss/variables-dark";
+// @import "bootstrap/scss/maps";
+// @import "bootstrap/scss/mixins";
+// @import "bootstrap/scss/root";

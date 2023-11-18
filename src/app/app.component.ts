@@ -11,4 +11,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'step-now';
+
+  logo = {
+    black: 'assets/img/Step Now Logo black.png',
+    white: 'assets/img/Step Now Logo.png',
+  };
+
+  currentLogo = this.logo.white;
 }

@@ -1,5 +1,5 @@
-@import '~bootstrap/scss/bootstrap';
-@import './abstracts/mixins';
+@use 'abstracts' as *;
+@import 'bootstrap/scss/bootstrap';
 
 .step-now-btn {
   padding: 14px 32px;
@@ -149,11 +149,11 @@ aside {
 }
 
 .nav-close-icon {
-  background-image: url('^assets/icons/closemenu.png') !important;
+  background-image: url('/assets/icons/closemenu.png') !important;
 }
 
 .nav-open-icon {
-  background-image: url('^assets/icons/openmenu.png') !important;
+  background-image: url('/assets/icons/openmenu.png') !important;
 }
 
 .nav-bg--white {

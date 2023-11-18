@@ -2,16 +2,17 @@
 @use 'abstracts';
 @use 'resets';
 @use 'base';
-
+@use 'custom';
+@use 'shame';
 
 /* You can add global styles to this file, and also import other style files */
-@import './abstracts/mixins';
-@import './resets/normalize';
-@import './resets/reset.local';
-@import './base/typography';
-@import './custom';
-@import './shame';
-@import '~swiper/swiper-bundle';
+// @import './abstracts/mixins';
+// @import './resets/normalize';
+// @import './resets/reset.local';
+// @import './base/typography';
+// @import './custom';
+// @import './shame';
+// @import '~swiper/swiper-bundle';
 
 html,
 body {
